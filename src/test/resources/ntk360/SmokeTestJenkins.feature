@@ -14,4 +14,4 @@ Feature: Job Titles Page Functionality
 
     Examples: 
       | JobTitle | JobDescription |
-      | ntk1     | study more     |
+      | SDET101  | study more     |
