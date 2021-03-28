@@ -2,6 +2,9 @@ package com.noorteck.qa.steps;
 
 import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.lang.RandomStringUtils;
+
 import com.noorteck.qa.utils.CommonUI;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
@@ -23,8 +26,14 @@ public class JobTitlesStepDefinition extends CommonUI {
 
 	@When("User enters {string}, {string}")
 	public void enterJobTitleData(String title, String description) {
-
-		jobTitlesObj.enterJobTitleName(title);
+		
+		String randomStr = RandomStringUtils.randomAlphabetic(5);
+		
+		String newTitle = title+ randomStr;
+		
+		System.out.println(newTitle);
+		
+		jobTitlesObj.enterJobTitleName(newTitle);
 		jobTitlesObj.enterJobDescription(description);
 	}
 
