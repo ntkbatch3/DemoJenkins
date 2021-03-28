@@ -14,6 +14,4 @@ Feature: Job Titles Page Functionality
 
     Examples: 
       | JobTitle | JobDescription |
-      | SCRUM1111 | study more     |
-      | Scrum2222 | study more     |
-      | scrum3333 | study more     |
+      | ntk1     | study more     |

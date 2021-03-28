@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/ntk360/", 
 		glue = "com.noorteck.qa.steps", 
-		plugin = { "pretty","html:target/cucumber-report.html" }, 
+		plugin = { "pretty","html:target/cucumber-report.html","json:target/cucumber.json" }, 
 		monochrome = true, tags = "@SmokeTest"
 
 )
